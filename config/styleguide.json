@@ -1,0 +1,273 @@
+{
+	"breakpoints": {
+		"tablet": 768,
+		"desktop": 1024,
+		"wide": 1440
+	},
+
+	"grid-columns": 12,
+	"column-width": 300,
+	"max-width": 1440,
+
+	"custom-grid": [8, 24],
+
+	"base-font-size": 16,
+	"base-line-height": 1.5,
+	"scale-factor": 1.125,
+	"baseline-grid": 0.5,
+
+	"sizes": {
+		"none": 0,
+		"xxs": 0.5,
+		"xs": 1,
+		"sm": 2,
+		"md": 4,
+		"lg": 6,
+		"xl": 8,
+		"xxl": 10
+	},
+
+	"default-colors": {
+		"transparent": "transparent",
+		"black": "#000000",
+		"white": "#ffffff"
+	},
+
+	"colors": {
+		"pink": "#ff0066",
+		"green": "#66ff00",
+		"blue": "#0066ff",
+		"orange": "#ff6600",
+		"gold": "#9f896b"
+	},
+
+	"social-colors": {
+		"facebook": "#4267b2",
+		"twitter": "#1da1f2",
+		"youtube": "#e62117",
+		"linkedin": "#0077b5",
+		"instagram": "linear-gradient(to right, #7649c2 0%, #bc00b8 43%, #faba58 100%)"
+	},
+
+	"patterns": {
+		"checker": "\"/assets/app/general/img/textures/checker.gif\""
+	},
+
+	"shades": {
+		"dark": 0.15,
+		"mid-dark": 0.31,
+		"mid": 0.46,
+		"mid-light": 0.64,
+		"light": 0.82
+	},
+
+	"families": {
+		"helvetica": "\"'HelveticaNeue', Helvetica, sans-serif\"",
+		"times": "\"'Times New Roman', Times, serif\"",
+		"courier": "\"'Courier New', Courier, monospace\"",
+		"playfair-display": "\"'Playfair Display', serif\"",
+		"roboto": "\"'Roboto', sans-serif\"",
+		"cutive-mono": "\"'Cutive Mono', monospace\""
+	},
+
+	"font-alias": {
+		"default": "roboto",
+		"heading": "playfair-display",
+		"mono": "cutive-mono"
+	},
+
+	"font-sizes": {
+		"xs": {
+			"font-size": "0.625rem",
+			"line-height": "1.5"
+		},
+		"sm": {
+			"font-size": "0.8125rem",
+			"line-height": "1.5"
+		},
+		"default": {
+			"font-size": "1rem",
+			"line-height": "1.5"
+		},
+		"1": {
+			"font-size": "1.125rem",
+			"line-height": "1.5"
+		},
+		"2": {
+			"font-size": "1.265625rem",
+			"line-height": "1.5"
+		},
+		"3": {
+			"font-size": "1.423828125rem",
+			"line-height": "1.5"
+		},
+		"4": {
+			"font-size": "1.601806640625rem",
+			"line-height": "1.5"
+		},
+		"5": {
+			"font-size": "1.802032470703125rem",
+			"line-height": "1.5"
+		},
+		"6": {
+			"font-size": "2.0272865295410156rem",
+			"line-height": "1.25"
+		},
+		"7": {
+			"font-size": "2.2806973457336426rem",
+			"line-height": "1.25"
+		},
+		"8": {
+			"font-size": "2.565784513950348rem",
+			"line-height": "1.25"
+		},
+		"9": {
+			"font-size": "2.8865075781941414rem",
+			"line-height": "1.25"
+		},
+		"10": {
+			"font-size": "3.247321025468409rem",
+			"line-height": "1.25"
+		}
+	},
+
+	"font-faces": [
+		{
+			"family": "\"Roboto\"",
+			"src": "\"/assets/app/general/fonts/roboto/roboto-100\"",
+			"weight": "hairline",
+			"style": "normal"
+		},
+		{
+			"family": "\"Roboto\"",
+			"src": "\"/assets/app/general/fonts/roboto/roboto-100italic\"",
+			"weight": "hairline",
+			"style": "italic"
+		},
+		{
+			"family": "\"Roboto\"",
+			"src": "\"/assets/app/general/fonts/roboto/roboto-300\"",
+			"weight": "light",
+			"style": "normal"
+		},
+		{
+			"family": "\"Roboto\"",
+			"src": "\"/assets/app/general/fonts/roboto/roboto-300italic\"",
+			"weight": "light",
+			"style": "italic"
+		},
+		{
+			"family": "\"Roboto\"",
+			"src": "\"/assets/app/general/fonts/roboto/roboto-400\"",
+			"weight": "normal",
+			"style": "normal"
+		},
+		{
+			"family": "\"Roboto\"",
+			"src": "\"/assets/app/general/fonts/roboto/roboto-400italic\"",
+			"weight": "normal",
+			"style": "italic"
+		},
+		{
+			"family": "\"Roboto\"",
+			"src": "\"/assets/app/general/fonts/roboto/roboto-500\"",
+			"weight": "medium",
+			"style": "normal"
+		},
+		{
+			"family": "\"Roboto\"",
+			"src": "\"/assets/app/general/fonts/roboto/roboto-500italic\"",
+			"weight": "medium",
+			"style": "italic"
+		},
+		{
+			"family": "\"Roboto\"",
+			"src": "\"/assets/app/general/fonts/roboto/roboto-700\"",
+			"weight": "bold",
+			"style": "normal"
+		},
+		{
+			"family": "\"Roboto\"",
+			"src": "\"/assets/app/general/fonts/roboto/roboto-700italic\"",
+			"weight": "bold",
+			"style": "italic"
+		},
+		{
+			"family": "\"Roboto\"",
+			"src": "\"/assets/app/general/fonts/roboto/roboto-900\"",
+			"weight": "black",
+			"style": "normal"
+		},
+		{
+			"family": "\"Roboto\"",
+			"src": "\"/assets/app/general/fonts/roboto/roboto-900italic\"",
+			"weight": "black",
+			"style": "italic"
+		},
+
+		{
+			"family": "\"Playfair Display\"",
+			"src": "\"/assets/app/general/fonts/playfair-display/playfair-display-400\"",
+			"weight": "normal",
+			"style": "normal"
+		},
+		{
+			"family": "\"Playfair Display\"",
+			"src": "\"/assets/app/general/fonts/playfair-display/playfair-display-400italic\"",
+			"weight": "normal",
+			"style": "italic"
+		},
+		{
+			"family": "\"Playfair Display\"",
+			"src": "\"/assets/app/general/fonts/playfair-display/playfair-display-700\"",
+			"weight": "bold",
+			"style": "normal"
+		},
+		{
+			"family": "\"Playfair Display\"",
+			"src": "\"/assets/app/general/fonts/playfair-display/playfair-display-700italic\"",
+			"weight": "bold",
+			"style": "italic"
+		},
+		{
+			"family": "\"Playfair Display\"",
+			"src": "\"/assets/app/general/fonts/playfair-display/playfair-display-900\"",
+			"weight": "black",
+			"style": "normal"
+		},
+		{
+			"family": "\"Playfair Display\"",
+			"src": "\"/assets/app/general/fonts/playfair-display/playfair-display-900italic\"",
+			"weight": "black",
+			"style": "italic"
+		},
+
+		{
+			"family": "\"cutive-mono\"",
+			"src": "\"/assets/app/general/fonts/cutive-mono/cutive-mono-400\"",
+			"weight": "normal",
+			"style": "normal"
+		}
+	],
+
+	"weights": {
+		"hairline": 100,
+		"extralight": 200,
+		"light": 300, 
+		"normal": 400,
+		"medium": 500,
+		"semibold": 600,
+		"bold": 700,
+		"extarbold": 800,
+		"black": 900
+	},
+
+	"icons": [
+		"facebook",
+		"twitter",
+		"instagram",
+		"youtube",
+		"linkedin",
+		"pinterest"
+	]
+}

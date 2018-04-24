@@ -1,0 +1,14 @@
+{
+	"templates": {
+		"helpers": "layout/helpers.js",
+		"ignored": "layout/base.hbs",
+		"basedir": "./app"
+	},
+	"static": [
+		{
+			"alias": "/assets",
+			"dir": "./"
+		}
+	],
+	"sitemap": "./config/sitemap.json"
+}

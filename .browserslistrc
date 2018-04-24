@@ -1,0 +1,9 @@
+ios >= 9
+android >= 9
+chromeAndroid >= 45
+ie 10
+ie 11
+last 2 edge versions
+last 2 chrome versions
+last 2 safari versions
+firefox >= 26

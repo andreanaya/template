@@ -1,0 +1,150 @@
+.richtext {
+	h1, h2, h3, h4, h5, h6, p, span {
+		@include mg-bottom(none);
+		@include mg-top(sm);
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	hr {
+		display: block;
+
+		width: 100%;
+		height: 1px;
+		border: none;
+		background-color: get-color('mid');
+
+		@include mg(md);
+
+		&:last-child {
+			display: none;
+		}
+	}
+
+	.area-name {
+		@extend %area-name;
+
+		+ .area-subtitle {
+			@include mg-top(none);
+		}
+
+		+ .area-description {
+			@include mg-top(xs);
+		}
+	}
+	.area-subtitle {
+		@extend %area-subtitle;
+
+		+ .area-description {
+			@include mg-top(xs);
+		}
+	}
+	.area-description {
+		@extend %area-description;
+
+		+ .area-description {
+			@include mg-top(xxs);
+		}
+	}
+
+	h1, .page-title {
+		@extend %page-title;
+
+		+ *:not(.page-subtitle) {
+			@include mg-top(md);
+		}
+
+		+ .page-subtitle {
+			@include mg-top(none);
+		}
+
+		+ .page-description {
+			@include mg-top(sm);
+		}
+	}
+	.page-subtitle {
+		@extend %page-subtitle;
+
+		+ *:not(.page-subtitle) {
+			@include mg-top(md);
+		}
+
+		+ .page-description {
+			@include mg-top(sm);
+		}
+	}
+
+	.intro {
+		@extend %intro;
+
+		+ *:not(.intro) {
+			@include mg-top(md);
+		}
+	}
+
+	h2, .section-header {
+		@extend %section-header;
+		@include mg-top(md);
+
+		+ .section-sub-header {
+			@include mg-top(-xxs);
+		}
+	}
+
+	.section-sub-header {
+		@extend %section-sub-header;
+	}
+
+	h3, .header {
+		@extend %header;
+		@include mg-top(md);
+
+		+ .sub-header {
+			@include mg-top(-xxs);
+		}
+	}
+
+	.sub-header {
+		@extend %sub-header;
+	}
+
+	h4 {
+		@extend %header.sm;
+
+		+ .sub-header {
+			@include mg-top(-xxs);
+		}
+	}
+
+	h5 {
+		@extend %header.xs;
+
+		+ .sub-header {
+			@include mg-top(-xxs);
+		}
+	}
+
+	h6 {
+		@extend %header.xxs;
+
+		+ .sub-header {
+			@include mg-top(-xxs);
+		}
+	}
+
+	.title {
+		@extend %title;
+
+		@include mg-top(sm);
+
+		+ .subtitle {
+			@include mg-top(-xs);
+		}
+	}
+
+	.subtitle {
+		@extend %subtitle;
+	}
+}

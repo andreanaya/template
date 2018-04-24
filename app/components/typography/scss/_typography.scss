@@ -1,0 +1,267 @@
+h1, h2, h3, h4, h5, h6 {
+	@include font-family(heading);
+}
+
+p {
+	@include font-family(default);
+}
+
+pre {
+	@include font-family(mono);
+}
+
+%area-name {
+	@include font-family(heading);
+	@include font-scale(4, 1);
+}
+
+%area-subtitle {
+	@include font-family(default);
+	@include font-scale(-1);
+	@include font-weight(bold);
+}
+
+%area-description {
+	@include font-family(default);
+	@include font-scale(-2, 1.2);
+}
+
+%page-title {
+	@include font-family(heading);
+	@include font-scale(8);
+	@include font-weight(bold);
+
+	&.md {
+		@include font-scale(6);
+
+		+ .page-subtitle {
+			@include font-scale(3, 1);
+		}
+	}
+
+	&.sm {
+		@include font-scale(4);
+
+		+ .page-subtitle {
+			@include font-scale(2, 1);
+		}
+	}
+}
+
+%page-subtitle {
+	@include font-family(heading);
+	@include font-scale(4, 1);
+	@include font-weight(bold);
+}
+
+%section-header {
+	@include font-family(heading);
+	@include font-scale(3);
+	@include font-weight(bold);
+
+	@include media(tablet) {
+		@include font-scale(4);
+	}
+}
+
+%section-sub-header {
+	@include font-family(heading);
+	@include font-scale(-1);
+	@include font-weight(bold);
+	@include font-tracking(50);
+
+	@include media(tablet) {
+		@include font-scale(0);
+	}
+}
+
+%header {
+	@include font-family(heading);
+	@include font-scale(3);
+	@include font-weight(bold);
+
+	&.sm {
+		@include font-scale(1);
+
+		+ .sub-header {
+			@include font-scale(-4);
+		}
+	}
+
+	&.xs {
+		@include font-scale(-1);
+
+		+ .sub-header {
+			@include font-scale(-5);
+		}
+	}
+
+	&.xxs {
+		@include font-scale(-2);
+
+		+ .sub-header {
+			@include font-scale(-5);
+		}
+	}
+}
+
+%sub-header {
+	@include font-scale(-3);
+	@include font-weight(bold);
+	@include font-tracking(50);
+	text-transform: uppercase;
+}
+
+
+%title {
+	@include font-family(default);
+	@include font-scale(0);
+	@include font-weight(bold);
+	@include font-tracking(25);
+
+	&.sm {
+		@include font-scale(-1);
+		@include font-weight(medium);
+		@include font-tracking(50);
+
+		+ .subtitle {
+			@include font-scale(-6);
+			@include font-tracking(50);
+		}
+	}
+
+	&.xs {
+		@include font-scale(-2);
+		@include font-weight(medium);
+		@include font-tracking(50);
+
+		+ .subtitle {
+			@include font-scale(-7);
+			@include font-tracking(50);
+		}
+	}
+}
+
+%subtitle {
+	@include font-scale(-5);
+	@include font-weight(medium);
+	@include font-tracking(25);
+	text-transform: uppercase;
+}
+
+%p {
+	@include font-scale(0);
+
+	&.sm {
+		@include font-scale(-1);
+	}
+
+	&.xs {
+		@include font-scale(-2);
+	}
+
+	b, strong {
+		@include font-weight(bold);
+	}
+
+	i, em {
+		font-style: italic;
+	}
+
+	a {
+		color: inherit;
+		text-derocartion: undelirne;
+	}
+}
+
+%intro {
+	@include font-family(default);
+	@include font-scale(1);
+	@include font-weight(medium);
+}
+
+%description {
+	@include font-scale(1);
+	@include font-weight(medium);
+}
+
+%info {
+	@include font-scale(-1);
+	@include font-weight(medium);
+}
+
+%caption {
+	@include font-scale(-2);
+	@include font-tracking(50);
+}
+
+%quote {
+
+}
+
+%breadcrumb {
+
+}
+
+%date {
+	
+}
+
+%author {
+
+}
+
+%category {
+
+}
+
+%tag {
+
+}
+
+%label {
+
+}
+
+%message {
+
+}
+
+%legal {
+
+}
+
+%copyright {
+
+}
+
+
+%list {
+	&__item {
+
+	}
+}
+
+%ordered-list {
+	&__item {
+		
+	}
+}
+
+%definition-list {
+	&__term {
+		
+	}
+
+	&__definition {
+		
+	}
+}
+
+%table {
+
+}
+
+%figure {
+
+}

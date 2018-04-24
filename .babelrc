@@ -1,0 +1,15 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "useBuiltIns": true
+            }
+        ]
+    ],
+    "plugins": [
+        "transform-object-assign",
+        "transform-object-rest-spread",
+        "transform-class-properties"
+    ]
+}

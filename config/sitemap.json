@@ -1,0 +1,55 @@
+{
+	"path": "",
+	"basePath": "layout/base",
+	"meta": {},
+	"template": "layout/views/home.hbs",
+	"data": "models/home.json",
+	"children": [
+		{
+			"path": "docs",
+			"basePath": "layout/docs",
+			"meta": {},
+			"template": "layout/views/docs/docs.hbs",
+			"data": "models/docs.json",
+			"children": [
+				{
+					"path": "component",
+					"basePath": "layout/docs",
+					"meta": {},
+					"template": "layout/views/docs/components/component.hbs",
+					"data": "models/component.json"
+				},
+				{
+					"path": "events",
+					"basePath": "layout/docs",
+					"meta": {},
+					"template": "layout/views/docs/modules/events.hbs",
+					"data": "models/events.json"
+				},
+				{
+					"path": "styleguide",
+					"basePath": "layout/docs",
+					"meta": {},
+					"template": "layout/views/docs/modules/styleguide.hbs",
+					"data": "models/styleguide.json",
+					"children": [
+						{
+							"path": "typography",
+							"basePath": "layout/docs",
+							"meta": {},
+							"template": "layout/views/docs/modules/typography.hbs",
+							"data": "models/typography.json"
+						},
+						{
+							"path": "layout",
+							"basePath": "layout/docs",
+							"meta": {},
+							"template": "layout/views/docs/modules/layout.hbs",
+							"data": "models/layout.json"
+						}
+					]
+				}
+			]
+		}
+	]
+}
