@@ -5,6 +5,8 @@ import './general/scss/index.scss';
 const objectFitImages = require('object-fit-images')();
 import '../.modernizrrc';
 
+import DOMEvents from 'boilerplate/general/js/DOMEvents.js';
+
 //Components
 import CSSJSModule from './components/css-js-module';
 import CSSOnlyModule from './components/css-only-module';
@@ -37,6 +39,6 @@ Object.keys(Helpers).forEach(function(key) {
 	Handlebars.registerHelper(key, Helpers[key]);
 });
 
-import DocsLayout from './layout/views/docs/components/component.hbs';
-// import ComponentLayout from './layout/components/component.hbs';
-console.log(DocsLayout({title:"Hellow World!"}))
+// import DocsLayout from './layout/views/docs/components/component.hbs';
+// // import ComponentLayout from './layout/components/component.hbs';
+// console.log(DocsLayout({title:"Hellow World!"}))

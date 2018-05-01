@@ -44,7 +44,7 @@ module.exports = {
 	for: function(from, to, options) {
 		var accum = '';
 		
-		for(var i = from; i < to; ++i) {
+		for(var i = from; i <= to; ++i) {
 			options.data.index = i;
 			accum += options.fn(this);
 		}
