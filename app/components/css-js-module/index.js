@@ -12,6 +12,10 @@ export default class CSSJSModule {
             console.log('>>>>> test');
         }
 
+        EventSystem.subscribe('test', function(e) {
+            console.log('>>>>> Global event')
+        });
+
     	squares.forEach(function(square) {
             square.subscribe('test', onTest);
     	});
