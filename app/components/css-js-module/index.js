@@ -1,5 +1,7 @@
 import './scss/index.scss';
 
+import EventSystem from 'boilerplate/general/js/EventSystem.js';
+
 export default class CSSJSModule {
     constructor(el) {
     	let squares = document.querySelectorAll('.squared');
@@ -15,11 +17,15 @@ export default class CSSJSModule {
     	});
 
         squares[0].addEventListener('click', function(e) {
-            document.body.publish(new Event('test'));
+            document.body.emit(new Event('test'));
         })
 
         squares[1].addEventListener('click', function(e) {
-            el.publish(new Event('test'));
+            el.emit(new Event('test'));
+        })
+
+        squares[2].addEventListener('click', function(e) {
+            EventSystem.broadcast(new Event('test'));
         })
 
         squares[3].addEventListener('click', function(e) {
@@ -28,6 +34,10 @@ export default class CSSJSModule {
 
         squares[4].addEventListener('click', function(e) {
             el.parentNode.block('test');
+        })
+
+        squares[5].addEventListener('click', function(e) {
+            this.broadcast(new Event('test'));
         })
     }
 }

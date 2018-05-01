@@ -5,7 +5,7 @@ import './general/scss/index.scss';
 const objectFitImages = require('object-fit-images')();
 import '../.modernizrrc';
 
-import DOMEvents from 'boilerplate/general/js/DOMEvents.js';
+import EventSystem from 'boilerplate/general/js/EventSystem.js';
 
 //Components
 import CSSJSModule from './components/css-js-module';
