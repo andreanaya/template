@@ -54,7 +54,6 @@
         "webpack-merge": "^4.1.1"
     },
     "dependencies": {
-        "axios": "^0.17.1",
         "babel-polyfill": "^6.26.0",
         "formdata-polyfill": "^3.0.4",
         "gsap": "^1.20.3",

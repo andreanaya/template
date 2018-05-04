@@ -6,6 +6,7 @@ const objectFitImages = require('object-fit-images')();
 import '../.modernizrrc';
 
 import EventSystem from 'boilerplate/general/js/EventSystem.js';
+import HistoryController from 'boilerplate/general/js/HistoryController.js';
 
 //Components
 import CSSJSModule from './components/css-js-module';

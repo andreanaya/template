@@ -1,8 +1,8 @@
 {
 	"templates": {
-		"helpers": "layout/helpers.js",
-		"ignored": "layout/base.hbs",
-		"basedir": "./app"
+		"helpers": "app/layout/helpers.js",
+		"ignored": "app/layout/base.hbs",
+		"basedir": "./"
 	},
 	"static": [
 		{
