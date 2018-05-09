@@ -1,12 +1,10 @@
 'use strict';
 // Styles
-import 'boilerplate/general/scss/index.scss';
 import './general/scss/index.scss';
 const objectFitImages = require('object-fit-images')();
 import '../.modernizrrc';
 
-import EventSystem from 'boilerplate/general/js/EventSystem.js';
-import HistoryController from 'boilerplate/general/js/HistoryController.js';
+import {init} from 'boilerplate/general/js/Core.js';
 
 //Components
 import CSSJSModule from './components/css-js-module';
@@ -18,19 +16,19 @@ import Typography from './components/typography';
 });
 
 // SVG Sprite
-const files = require.context('./general/svg', true, /^\.\/.*\.svg/);
+// const files = require.context('./general/svg', true, /^\.\/.*\.svg/);
 
-var style = document.createElement("style");
+// var style = document.createElement("style");
 
-style.appendChild(document.createTextNode(files.keys().reduce((css, key) => {
-	let icon = files(key);
-	let viewBox = icon.default.viewBox.split(' ');
-	let ratio = viewBox[2]/viewBox[3];
+// style.appendChild(document.createTextNode(files.keys().reduce((css, key) => {
+// 	let icon = files(key);
+// 	let viewBox = icon.default.viewBox.split(' ');
+// 	let ratio = viewBox[2]/viewBox[3];
 
-	return css+'.'+icon.default.id+'{width:'+ratio+'em;height:1em;}'
-}, '.icon{display:inline-block;vertical-align:bottom;}')));
+// 	return css+'.'+icon.default.id+'{width:'+ratio+'em;height:1em;}'
+// }, '.icon{display:inline-block;vertical-align:bottom;}')));
 
-document.head.appendChild(style);
+// document.head.appendChild(style);
 
 
 import Handlebars from 'handlebars/runtime';
@@ -43,3 +41,5 @@ Object.keys(Helpers).forEach(function(key) {
 // import DocsLayout from './layout/views/docs/components/component.hbs';
 // // import ComponentLayout from './layout/components/component.hbs';
 // console.log(DocsLayout({title:"Hellow World!"}))
+
+init();
