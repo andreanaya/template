@@ -11,7 +11,7 @@ import CSSJSModule from './components/css-js-module';
 import CSSOnlyModule from './components/css-only-module';
 import Typography from './components/typography';
 
-[...document.querySelectorAll(`.css-js-module`)].forEach( (el) => {
+[...document.querySelectorAll('.css-js-module')].forEach( (el) => {
     new CSSJSModule(el);
 });
 
