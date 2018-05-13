@@ -4,5 +4,14 @@
 	"meta": {},
 	"template": "app/layout/views/home.hbs",
 	"data": "app/models/home.json",
-	"children": []
+	"children": [
+		{
+			"path": "page",
+			"basePath": "app/layout/base",
+			"meta": {},
+			"template": "app/layout/views/page.hbs",
+			"data": "app/models/page.json",
+			"children": []
+		}
+	]
 }

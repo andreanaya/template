@@ -7,13 +7,9 @@ import '../.modernizrrc';
 import {init} from 'boilerplate/general/js/Core.js';
 
 //Components
-import CSSJSModule from './components/css-js-module';
-import CSSOnlyModule from './components/css-only-module';
-import Typography from './components/typography';
-
-[...document.querySelectorAll('.css-js-module')].forEach( (el) => {
-    new CSSJSModule(el);
-});
+import './components/css-js-module';
+import './components/css-only-module';
+import './components/typography';
 
 // SVG Sprite
 // const files = require.context('./general/svg', true, /^\.\/.*\.svg/);
