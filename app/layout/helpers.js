@@ -41,6 +41,50 @@ module.exports = {
 		return options.inverse(this);
 	},
 
+	contains: function(array, value, options) {
+		if(array !== undefined && value !== undefined && array.indexOf(value) > -1) {
+			return options.fn(this);
+		}
+		
+		return options.inverse(this);
+	},
+
+	filter: function(filter, options) {
+		if(filter === undefined || Object.keys(filter).filter(function(key) {
+			return filter[key].indexOf(this[key]) > -1;
+		}, this).length > 0) {
+			return options.fn(this);
+		}
+
+		return options.inverse(this);
+	},
+
+	sort: function(array, sort, options) {
+		if(sort) {
+			var key = Object.keys(sort).pop();
+			var order = sort[key] === 'true';
+			
+			array = array.sort(function(a, b) {
+				if(a[key] > b[key]) {
+					return order?1:-1;
+				} else if(a[key] < b[key]) {
+					return order?-1:1;
+				} else {
+					return 0;
+				}
+			})
+		}
+		
+		var accum = '';
+		
+		array.forEach(function(item, index) {
+			options.data.index = index;
+			accum += options.fn(item);
+		});
+
+		return accum;
+	},
+
 	for: function(from, to, options) {
 		var accum = '';
 		
