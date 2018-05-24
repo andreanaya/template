@@ -52,7 +52,7 @@ module.exports = {
 	filter: function(filter, options) {
 		if(filter === undefined || Object.keys(filter).filter(function(key) {
 			return filter[key].indexOf(this[key]) > -1;
-		}, this).length > 0) {
+		}, this).length == Object.keys(this).length) {
 			return options.fn(this);
 		}
 
@@ -62,7 +62,7 @@ module.exports = {
 	sort: function(array, sort, options) {
 		if(sort) {
 			var key = Object.keys(sort).pop();
-			var order = sort[key] === 'true';
+			var order = sort[key].toString() === 'true';
 			
 			array = array.sort(function(a, b) {
 				if(a[key] > b[key]) {
@@ -94,6 +94,14 @@ module.exports = {
 		}
 
 		return accum;
+	},
+
+	json: function(json) {
+		return JSON.stringify(json);
+	},
+
+	object: function(object) {
+		return JSON.stringify(object).replace(/\"([^(\")"]+)\":/g,"$1:").replace(/"(true|false)"/igm, '$1');
 	},
 
 	raw: function(partialName) {
