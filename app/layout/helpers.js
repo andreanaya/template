@@ -53,7 +53,7 @@ module.exports = {
 		let filter = true;
 
 		if(params !== undefined) {
-			var keys = Object.keys(params || {});
+			var keys = Object.keys(params);
 
 			if(type === 'every') {
 				filter = keys.filter((key) => {
