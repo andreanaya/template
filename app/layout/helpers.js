@@ -49,26 +49,37 @@ module.exports = {
 		return options.inverse(this);
 	},
 
-	filter: function(filter, options) {
-		if(filter === undefined || Object.keys(filter).filter(function(key) {
-			return filter[key].indexOf(this[key]) > -1;
-		}, this).length == Object.keys(this).length) {
+	filter: function(data, params, type, options) {
+		let filter = true;
+
+		if(params !== undefined) {
+			var keys = Object.keys(params || {});
+
+			if(type === 'every') {
+				filter = keys.filter((key) => {
+					return params[key].indexOf(data[key]) > -1;
+				}).length == keys.length;
+			} else {
+				filter = keys.filter((key) => {
+					return params[key].indexOf(data[key]) > -1;
+				}).length > 0;
+			}
+		}
+
+		if(filter) {
 			return options.fn(this);
 		}
 
 		return options.inverse(this);
 	},
 
-	sort: function(array, sort, options) {
+	sort: function(array, sort, descending, options) {
 		if(sort) {
-			var key = Object.keys(sort).pop();
-			var order = sort[key].toString() === 'true';
-			
 			array = array.sort(function(a, b) {
-				if(a[key] > b[key]) {
-					return order?1:-1;
-				} else if(a[key] < b[key]) {
-					return order?-1:1;
+				if(a[sort] > b[sort]) {
+					return descending === 'true'?-1:1;
+				} else if(a[sort] < b[sort]) {
+					return descending === 'true'?1:-1;
 				} else {
 					return 0;
 				}
